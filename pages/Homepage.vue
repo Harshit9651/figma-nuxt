@@ -51,7 +51,7 @@
         <h2>Transform Your Space with AI</h2>
         <div class="card-container">
     
-    
+<!--     
         
             <CardPage 
             v-for="(image, index) in images" 
@@ -60,17 +60,17 @@
             :title="image.label"
             :description="image.description"
             :buttonText="image.buttonText"
-          />
+          /> -->
         </div>
       </section>
     </div>
   </template>
   <script setup>
   import { ref } from 'vue';
-  import CardPage from './CardPage.vue';
-  import { useStore } from 'vuex';
-  const store = useStore();
-  console.log(store)
+//   import CardPage from './CardPage.vue';
+//   import { useStore } from 'vuex';
+//   const store = useStore();
+//   console.log(store)
   const images = store.state.images;
   
   const showNav = ref(false);
